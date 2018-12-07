@@ -1,0 +1,93 @@
+
+body {
+	font-family: 'Khula', sans-serif;
+}
+
+h1,h4{
+	position: relative;
+	text-align: center;
+}
+
+input[type=radio] {
+	vertical-align: middle;
+	position: relative;
+}
+ 
+input[type=checkbox]{
+  vertical-align: middle;
+  position: relative;
+}
+ 
+label {
+	padding-right: 3%;
+}
+
+ 
+#pizzaForm {
+	float: left ;
+    width: 60%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+#containerOrderSummary {
+	float: right;
+	width: 30%;
+	padding-top: 2.5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#OrderSummary {
+	padding: 5%;
+	border: 0;
+	margin: 0;
+	background: #f6f6f6;  
+}
+
+#sizecontent{
+	float: left;
+    width:100%;
+	padding-left: 5%;
+	padding-bottom: 3%;
+}
+
+#customizecontainer {
+	float:left;
+	width:100%;
+	padding-bottom:3%;
+}
+
+#crustcontent{
+	float: left;
+    width:30%;
+	padding-left: 5%;
+}
+
+#saucecontent{
+	float: left;
+    width:30%;
+}
+
+#cheesecontent{
+	float: left;
+    width:30%;	
+}
+
+#toppingscontainer {
+	float:left;
+	width:100%;
+	padding-bottom:3%;
+}
+
+#meatcontent{
+	float: left;
+    width:40%;
+	padding-left: 5%;
+}
+
+#veggiecontent {
+	float: left;
+	width:40%;
+}

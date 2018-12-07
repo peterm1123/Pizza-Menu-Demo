@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Pizza Menu Demo</title>
+		<link rel="stylesheet" href="pizzamenu.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	</head>
+	
+				<body>
+
+				<header>
+				  <h1>Pizza Menu</h1>
+				</header>
+				<hr>
+
+				<form = action="#" method="post" id="pizzaForm">
+
+				<fieldset>
+					<div id="sizecontent">
+						<h3>Size Selection</h3>
+						<label><input type="radio" value="6.00" name="size" id="personal" /> Personal </label>
+						<label><input type="radio" value="10.00" name="size" id="medium" /> Medium </label>
+						<label><input type="radio" value="14.00" name="size" id="large" /> Large </label>
+						<label><input type="radio" value="16.00" name="size" id="extralarge" /> Extra Large </label>
+						<input type="hidden" name="sz_tot" value="0.00" />
+					</div><!--sizecontent-->
+					<p>* Personal, Medium, Large and Extra Large are $6.00, $10.00, $14.00 and $16.00 each</p>
+				</fieldset>
+
+				<fieldset>
+				<div id="customizecontainer">
+					<div id="crustcontent">
+						<p><strong>Crust Selection</strong></p>
+						<label><input type="radio" value="0.00" name="crust" id="plain" /> Plain </label><br>
+						<label><input type="radio" value="0.00" name="crust" id="garlicbutter" /> Garlic Butter </label><br>
+						<label><input type="radio" value="0.00" name="crust" id="spicy" /> Spicy </label><br>
+						<label><input type="radio" value="0.00" name="crust" id="housespecial" /> House Special </label><br>
+						<label><input type="radio" value="3.00" name="crust" id="cheesestuffed" /> Cheese Stuffed </label><br>
+						<input type="hidden" name="crust_tot" value="0.00" />
+					</div><!--crustcontent-->
+
+					<div id="saucecontent">
+						<p><strong>Sauce Selection</strong></p>
+						<label><input type="radio" value="0.00" name="sauce" id="marinara" /> Marinara </label><br>
+						<label><input type="radio" value="0.00" name="sauce" id="white" /> White </label><br>
+						<label><input type="radio" value="0.00" name="sauce" id="barbeque" /> Barbeque </label><br>
+						<label><input type="radio" value="0.00" name="sauce" id="nosauce" /> No Sauce </label><br>
+						<input type="hidden" name="sauce_tot" value="0.00" />
+					</div><!--saucecontent-->
+
+					<div id="cheesecontent">
+						<p><strong>Cheese Selection</strong></p>
+						<label><input type="radio" value="0.00" name="cheese" id="regular" /> Regular </label><br>
+						<label><input type="radio" value="0.00" name="cheese" id="nocheese" /> No Cheese </label><br>
+						<label><input type="radio" value="3.00" name="cheese" id="extracheese" /> Extra Cheese </label><br>
+						<input type="hidden" name="cheese_tot" value="0.00" />
+					</div><!--cheesecontent-->
+				</div> <!--customizecontainer-->
+				<p>* Cheese Stuffed Crust and Extra Cheese Selection are $3.00, respectively.</p>
+				</fieldset>
+
+				<fieldset>
+				<div id="toppingscontainer">
+					<div id="meatcontent">
+						<p><strong>Meat Selection</strong></p>
+						<label><input type="checkbox" class="meat" value=" Pepperoni " /> Pepperoni </label><br>
+						<label><input type="checkbox" class="meat" value=" Sausage " /> Sausage </label><br>
+						<label><input type="checkbox" class="meat" value=" Canadian Bacon " /> Canadian Bacon </label><br>
+						<label><input type="checkbox" class="meat" value=" GroundBeef " /> Ground Beef </label><br>
+						<label><input type="checkbox" class="meat" value=" Anchovy " /> Anchovy </label><br>
+						<label><input type="checkbox" class="meat" value=" Chicken " /> Chicken </label><br>
+					</div><!--meatcontent-->
+
+					<div id="veggiecontent">
+						<p><strong>Vegetable Selection</strong></p>
+						<label><input type="checkbox" class="veggie" value=" Tomatoes " /> Tomatoes </label><br>
+						<label><input type="checkbox" class="veggie" value=" Onions " /> Onions </label><br>
+						<label><input type="checkbox" class="veggie" value=" Olives " /> Olives </label><br>
+						<label><input type="checkbox" class="veggie" value=" Green Peppers " /> Green Peppers </label><br>
+						<label><input type="checkbox" class="veggie" value=" Mushrooms " /> Mushrooms </label><br>
+						<label><input type="checkbox" class="veggie" value=" Pineapple " /> Pineapple </label><br>
+						<label><input type="checkbox" class="veggie" value=" Spinach " /> Spinach </label><br>
+						<label><input type="checkbox" class="veggie" value=" Jalapeno " /> Jalapenno </label><br>
+					</div><!--vegetablecontent-->
+					<input type="hidden" name="tops_tot" value="0.00" />
+				</div> <!--toppingscontainer-->
+				<p>* First Meat and Vegetable Topping is complimentary. Additional toppings are $1.00 extra.</p>
+				</fieldset>
+					
+				</form><!-- End pizzaForm-->
+
+				<div id="containerOrderSummary">
+					<div id="OrderSummary">
+					<h4 id = "ordertitle"></h4>
+						<table>
+							<tr>
+								<td id="Size"></td>
+								<td id="SizePrice"></td>
+							</tr>
+							<tr>
+								<td id="Crust"></td>
+								<td id="CrustPrice"></td>
+							</tr>
+							<tr>
+								<td id="Sauce"></td>
+								<td id="SaucePrice"></td>
+							</tr>
+							<tr>
+								<td id="Cheese"></td>
+								<td id="CheesePrice"></td>
+							</tr>
+							<tr>
+								<td id="Meats"></td>
+								<td id="MeatPrice"></td>
+							</tr>
+							<tr>
+								<td id="Veggies"></td>
+								<td id="VeggiesPrice"></td>
+							</tr>
+
+							<tr>
+								<td id="Total"></td>
+								<td id="TotalPrice"></td>
+							</tr>
+						</table>
+					</div><!--OrderSummary-->
+					<input type="button" onclick="OrderCheck ()" value="Get Receipt" id=""/>
+				</div> <!-- End containerOrderSummary-->
+
+
+		</body>
+
+	<script src="pizzamenu.js"></script>	
+
+	
+
+</html>
